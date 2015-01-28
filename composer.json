@@ -1,0 +1,21 @@
+{
+    "name": "gxela/laravel-etcd",
+    "description": "Laravel Etcd Client",
+    "authors": [
+        {
+            "name": "Alex Goretoy",
+            "email": "alex@goretoy.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "linkorb/etcd-php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Gxela\\LaravelEtcd": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
