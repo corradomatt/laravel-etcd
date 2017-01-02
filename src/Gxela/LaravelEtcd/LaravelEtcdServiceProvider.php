@@ -24,7 +24,7 @@ class LaravelEtcdServiceProvider extends ServiceProvider {
 
     private function registerClient()
     {
-        $this->app->bindShared('laravel-etcd.client', function($app)
+        $this->app->singleton('laravel-etcd.client', function($app)
         {
             $server = \Config::get('laravel-etcd:config.server', 'http://127.0.0.1:4001');
             $version = \Config::get('laravel-etcd:config.version', 'v2');
